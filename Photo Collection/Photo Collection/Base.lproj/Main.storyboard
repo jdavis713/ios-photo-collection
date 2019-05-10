@@ -145,31 +145,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a theme:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJm-kS-VSj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a theme:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJm-kS-VSj">
                                 <rect key="frame" x="20" y="112" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6o-ob-zrt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6o-ob-zrt">
                                 <rect key="frame" x="127" y="141" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dark"/>
                                 <connections>
                                     <action selector="darkThemeSelected:" destination="agr-nU-PFI" eventType="touchUpInside" id="QxO-sp-CKH"/>
+                                    <action selector="selectDarkTheme:" destination="agr-nU-PFI" eventType="touchUpInside" id="m2y-hz-qiR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTK-SC-2cy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTK-SC-2cy">
                                 <rect key="frame" x="250" y="141" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Blue"/>
                                 <connections>
                                     <action selector="blueThemeSelected:" destination="agr-nU-PFI" eventType="touchUpInside" id="4Cd-ro-qvW"/>
+                                    <action selector="selectBlueTheme:" destination="agr-nU-PFI" eventType="touchUpInside" id="6JQ-ky-Hox"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b6o-ob-zrt" firstAttribute="leading" secondItem="0v9-k4-Ymh" secondAttribute="leading" constant="127" id="1KF-vj-Cfl"/>
+                            <constraint firstItem="0v9-k4-Ymh" firstAttribute="trailing" secondItem="TTK-SC-2cy" secondAttribute="trailing" constant="133" id="6iJ-30-oxN"/>
+                            <constraint firstItem="0v9-k4-Ymh" firstAttribute="bottom" secondItem="TTK-SC-2cy" secondAttribute="bottom" constant="691" id="GOY-8n-eMN"/>
+                            <constraint firstItem="b6o-ob-zrt" firstAttribute="top" secondItem="VJm-kS-VSj" secondAttribute="bottom" constant="8" id="OZg-8e-NIP"/>
+                            <constraint firstItem="VJm-kS-VSj" firstAttribute="leading" secondItem="0v9-k4-Ymh" secondAttribute="leading" constant="20" id="Y2e-db-zUl"/>
+                            <constraint firstItem="TTK-SC-2cy" firstAttribute="leading" secondItem="b6o-ob-zrt" secondAttribute="trailing" constant="90" id="diO-jL-TUy"/>
+                            <constraint firstItem="b6o-ob-zrt" firstAttribute="top" secondItem="VJm-kS-VSj" secondAttribute="bottom" constant="8" id="n4s-jJ-T1S"/>
+                            <constraint firstItem="0v9-k4-Ymh" firstAttribute="bottom" secondItem="b6o-ob-zrt" secondAttribute="bottom" constant="691" id="ny9-8m-8cL"/>
+                            <constraint firstItem="VJm-kS-VSj" firstAttribute="top" secondItem="0v9-k4-Ymh" secondAttribute="top" constant="68" id="pPQ-w2-pei"/>
+                            <constraint firstItem="TTK-SC-2cy" firstAttribute="top" secondItem="VJm-kS-VSj" secondAttribute="bottom" constant="8" id="r40-kc-hMZ"/>
+                            <constraint firstItem="0v9-k4-Ymh" firstAttribute="trailing" secondItem="VJm-kS-VSj" secondAttribute="trailing" constant="20" id="tWe-pd-z2F"/>
+                            <constraint firstItem="TTK-SC-2cy" firstAttribute="leading" secondItem="b6o-ob-zrt" secondAttribute="trailing" constant="90" id="xDm-Vi-i5x"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0v9-k4-Ymh"/>
                     </view>
                 </viewController>

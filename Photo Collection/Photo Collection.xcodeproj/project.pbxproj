@@ -17,6 +17,7 @@
 		8B49ADC62284DA5200DB3E03 /* ThemeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49ADC52284DA5100DB3E03 /* ThemeSelectionViewController.swift */; };
 		8B49ADCA2284E2FD00DB3E03 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49ADC92284E2FD00DB3E03 /* Photo.swift */; };
 		8B49ADCC2284E33B00DB3E03 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49ADCB2284E33B00DB3E03 /* PhotoController.swift */; };
+		8B49ADCF228503A100DB3E03 /* ThemeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49ADCE228503A100DB3E03 /* ThemeHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8B49ADC52284DA5100DB3E03 /* ThemeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSelectionViewController.swift; sourceTree = "<group>"; };
 		8B49ADC92284E2FD00DB3E03 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		8B49ADCB2284E33B00DB3E03 /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
+		8B49ADCE228503A100DB3E03 /* ThemeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,8 @@
 			children = (
 				8B49ADAD2284CEEF00DB3E03 /* AppDelegate.swift */,
 				8B49ADB12284CEEF00DB3E03 /* Main.storyboard */,
-				8B49ADC92284E2FD00DB3E03 /* Photo.swift */,
-				8B49ADCB2284E33B00DB3E03 /* PhotoController.swift */,
+				8B49ADCE228503A100DB3E03 /* ThemeHelper.swift */,
+				8B49ADCD2285038B00DB3E03 /* Models */,
 				8B49ADC82284E22100DB3E03 /* Views */,
 				8B49ADC72284E21600DB3E03 /* View Controllers */,
 				8B49ADB42284CEF400DB3E03 /* Assets.xcassets */,
@@ -93,6 +95,15 @@
 				8B49ADC12284D45F00DB3E03 /* PhotosCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8B49ADCD2285038B00DB3E03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B49ADC92284E2FD00DB3E03 /* Photo.swift */,
+				8B49ADCB2284E33B00DB3E03 /* PhotoController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 				8B49ADC02284D32200DB3E03 /* PhotosCollectionViewController.swift in Sources */,
 				8B49ADC42284D74100DB3E03 /* PhotoDetailViewController.swift in Sources */,
 				8B49ADC22284D45F00DB3E03 /* PhotosCollectionViewCell.swift in Sources */,
+				8B49ADCF228503A100DB3E03 /* ThemeHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

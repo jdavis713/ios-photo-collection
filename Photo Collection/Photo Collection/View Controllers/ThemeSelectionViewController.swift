@@ -28,14 +28,16 @@ class ThemeSelectionViewController: UIViewController {
     */
     
     //MARK: -Action
-    @IBAction func darkThemeSelected(_ sender: Any) {
-        print("Turn the lights off")
+ 
+    @IBAction func selectDarkTheme(_ sender: Any) {
     }
-    @IBAction func blueThemeSelected(_ sender: Any) {
-        print("Why so sad?")
+    
+    @IBAction func selectBlueTheme(_ sender: Any) {
     }
+    
+    
     
     //MARK: -Properties
     
-    
+    var themeHelper: ThemeHelper?
 }

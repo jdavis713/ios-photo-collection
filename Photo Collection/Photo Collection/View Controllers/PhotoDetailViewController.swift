@@ -31,5 +31,8 @@ class PhotoDetailViewController: UIViewController {
     @IBOutlet var imageDetailView: UIImageView!
     @IBOutlet var imageDescription: UITextField!
     
+    var photoController: PhotoController?
+    var photo: Photo?
+    var themeHelper: ThemeHelper?
 
 }
